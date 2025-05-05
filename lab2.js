@@ -7,7 +7,7 @@ let characters = [
 ];
 
 // Map 1 Get array of all names only
-console.log("Get array of all names only");
+console.log("===============Get array of all names only==============");
 let numbers = characters.map((currentValue) => {
   return currentValue[0];
 });
@@ -32,7 +32,7 @@ console.log(
 let totalHeights = heights.reduce((sum, e) => {
   return sum + e;
 }, 0);
-console.log(totalHeights, "sum");
+console.log(totalHeights);
 
 // Filter height less than 200
 console.log(
@@ -66,6 +66,15 @@ let mass = characters.slice().sort((a, b) => b[3] - a[3]);
 console.log(mass);
 
 // Every
+// Does every character have mass more than 40?
+console.log(
+  "==================Does every character have mass more than 40==========================="
+);
+let massMoreThanForty = mass.every((e) => {
+  return e > 40;
+});
+
+console.log(massMoreThanForty);
 
 // Is every character shorter than 200?
 console.log(
